@@ -1,0 +1,42 @@
+{
+  "name": "deframer",
+  "version": "0.1.0",
+  "description": "A TypeScript CLI that converts a Framer-generated component into a clean, readable React + CSS component.",
+  "keywords": [
+    "framer",
+    "react"
+  ],
+  "homepage": "https://github.com/honzasusek/deframer#readme",
+  "bugs": {
+    "url": "https://github.com/honzasusek/deframer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honzasusek/deframer.git"
+  },
+  "license": "ISC",
+  "author": "Honza Susek",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "deframer": "dist/cli.js"
+  },
+  "scripts": {
+    "deframe": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.25.0",
+    "@babel/parser": "^7.25.0",
+    "@babel/traverse": "^7.25.0",
+    "@babel/types": "^7.25.0"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__traverse": "^7.20.6",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
